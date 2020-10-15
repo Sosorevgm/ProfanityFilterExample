@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.sosorevgm.profanityfilter'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.sosorevgm.profanityfilter'
+                artifactId 'profanityfilter'
+                name 'profanityfilter'
+                description 'An android profanity filter library.'
+                url 'https://github.com/Sosorevgm/ProfanityFilterExample'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'sosorevgm'
+                        name 'sosorevgm'
+                        email 'Sosorevgm@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/Sosorevgm/ProfanityFilterExample'
+                    developerConnection 'https://github.com/Sosorevgm/ProfanityFilterExample.git'
+                    url 'https://github.com/Sosorevgm/ProfanityFilterExample'
+                }
+            }
+        }
+    }
+}
